@@ -1,0 +1,36 @@
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Espacio entre los elementos */
+  }
+  
+  .article-card {
+    width: calc(20.33% - 10px); /* Ancho de cada tarjeta, 33.33% del contenedor con un espacio de 20px entre ellas */
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .article-content {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .article-card {
+      width: calc(50% - 20px); /* Para pantallas más pequeñas, muestra 2 columnas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .article-card {
+      width: 100%; /* Para pantallas aún más pequeñas, muestra 1 columna */
+    }
+  }
+  

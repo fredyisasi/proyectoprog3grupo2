@@ -1,0 +1,20 @@
+/* src/components/Header.css */
+.page-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .page-header h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 5em;
+    color: #f9f7f7;
+    margin: 0;
+  }
+  
+  .page-header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 6em;
+    color: #f9f8f8;
+    margin: 10px 0 0 0;
+  }
+  

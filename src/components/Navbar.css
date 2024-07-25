@@ -1,0 +1,128 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #080808c3;
+  color: white;
+  flex-wrap: wrap;
+  position: fixed;
+  position: fixed; /* Hace que la navbar esté fija en la parte superior */
+  top: 0;
+  width: 100%; /* Hace que la navbar ocupe todo el ancho de la pantalla */
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+.navbar-logo a {
+  color: rgb(228, 214, 19);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5em;
+  color: rgb(202, 165, 32);
+  cursor: pointer;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 5;
+  padding: 100;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.navbar-links li {
+  margin: 0 10px;
+  
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #f4f00e;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 80px;
+  display: flex;
+  gap: 20px;
+  flex: 1; /* Permite que el menú ocupe el espacio restante */
+  
+}
+
+.navbar-login {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  
+}
+
+.navbar-login:hover {
+  color: #f0a500;
+}
+
+.navbar-search {
+  padding: 5px 10PX;
+  font-size: 1em;
+  align-items: center;
+  display: flex;
+  
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 50px; /* Adjust as needed */
+    top: 15px; /* Adjust as needed */
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    z-index: 1;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-user {
+    display: none;
+  }
+}
+
+.navbar-search .fa-user-circle {
+  font-size: 1.5em;
+  color: #f0ad4e; /* Cambia el color del ícono según sea necesario */
+  background-color: #333; /* Cambia este color según sea necesario */
+}
