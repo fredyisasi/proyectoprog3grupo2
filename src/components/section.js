@@ -1,7 +1,6 @@
 // src/components/Navbar.js
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css'; // Asegúrate de importar el archivo CSS para los estilos
+
 import { Link } from 'react-router-dom';
 
 
@@ -13,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-     
-    </nav>
+    <div>
+
+    </div>
   );
 };
 
