@@ -187,3 +187,75 @@
   width: 100%;
   height: 100%;
 }
+
+
+
+/* Estilo para el contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Color de borde más suave */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para la galería de videos */
+.video-gallery {
+  display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Alinea el desplazamiento */
+  gap: 16px; /* Espacio entre los videos */
+  padding: 10px;
+}
+
+/* Estilo para cada contenedor de video */
+.video-container {
+  flex: 0 0 auto; /* Evita el redimensionamiento */
+  scroll-snap-align: start; /* Alinea los elementos al inicio del contenedor */
+}
+
+/* Estilo para los iframes de los videos */
+.video-container iframe {
+  width: 400px; /* Ajusta el ancho del video */
+  height: 300px; /* Ajusta la altura del video */
+  border-radius: 8px; /* Bordes redondeados para los videos */
+}
+
+/* Estilo para los botones del carrusel */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none;
+  padding: 12px 16px; /* Tamaño del botón */
+  border-radius: 50%; /* Forma circular */
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+/* Estilo para el botón de desplazamiento a la izquierda */
+.carousel-button.left {
+  left: 10px;
+}
+
+/* Estilo para el botón de desplazamiento a la derecha */
+.carousel-button.right {
+  right: 10px;
+}
+
+/* Efecto de hover para los botones */
+.carousel-button:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  transform: translateY(-50%) scale(1.1); /* Agranda el botón al pasar el mouse */
+}
+
+/* Efecto de foco para los botones */
+.carousel-button:focus {
+  outline: none; /* Elimina el contorno por defecto */
+}
