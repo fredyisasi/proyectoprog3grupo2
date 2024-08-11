@@ -16,10 +16,10 @@ function Home() {
        
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Lo ultimo en noticias de fotografia
+            Lo ultimo en Articulos de fotografia
           </h1>
           <p className="primary-text">
-            Todo en noticias de fotografia en 
+            Todo en Articulos de fotografia en 
             general la mejora tu técnica y podras ver 
             la mejor perspectiva fotografica de los expertos.
           </p>
@@ -32,7 +32,7 @@ function Home() {
       <div className="article-card">
           <img src="/assets/images/article1.png" alt="Article 1" />
           <div className="article-content">
-          <Link to="/ArticleDetail">
+          <Link to="/Articleshistoria">
           <h2>Fotografía de Paisajes Nocturnos</h2>
           </Link>
             <p>La fotografía de paisajes nocturnos es un campo fascinante...</p>
@@ -42,7 +42,7 @@ function Home() {
       <div className="article-card">
           <img src="/assets/images/article2.png" alt="Article 2" />
           <div className="article-content">
-          <Link to="/ArticleDetail">
+          <Link to="/Articleshistoria">
           <h2>Artículo 2: Retratos de Alta Velocidad </h2>
           </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
@@ -51,8 +51,8 @@ function Home() {
      
   </div>
     <div className="home-text-section">
-    <button className="secondary-button"><Link to="/News" style={{ textDecoration: 'none', color: 'inherit' }}>
-             Más Noticias <br/><FiArrowRight />
+    <button className="secondary-button"><Link to="/Articleshistoria" style={{ textDecoration: 'none', color: 'inherit' }}>
+             Más Articulos <br/><FiArrowRight />
           </Link></button>
           <p className="primary-text">
             Aca arriba
@@ -90,6 +90,61 @@ function Home() {
          </p>
          </div>
     </div>
+
+    
+    <div>
+     
+     <div>
+      
+       <div className="home-text-section">
+         <h1 className="primary-heading">
+           Lo ultimo en noticias de fotografia
+         </h1>
+         <p className="primary-text">
+           Todo en noticias de fotografia en 
+           general la mejora tu técnica y podras ver 
+           la mejor perspectiva fotografica de los expertos.
+         </p>
+         
+       </div>
+     
+   </div>
+   </div>
+   <div >
+      <h1>Noticias de Eventos Fotograficos</h1>
+        
+        <div className="article-list"> 
+            <div className="article-card">
+                <img src="/assets/images/noticia1.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/News">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia2.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/News">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+        </div>
+      
+        
+      </div>
+   <div className="home-text-section">
+   <button className="secondary-button"><Link to="/News" style={{ textDecoration: 'none', color: 'inherit' }}>
+            Más Noticias <br/><FiArrowRight />
+         </Link></button>
+         <p className="primary-text">
+           Aca arriba
+         </p>
+   </div>
+
     </div>
   );
 }

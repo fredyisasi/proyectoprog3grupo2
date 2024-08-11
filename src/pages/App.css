@@ -228,7 +228,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #007bff; /* Color de fondo */
+  background-color: #0400f8; /* Color de fondo */
   color: #fff; /* Color del texto */
   border: none;
   padding: 12px 16px; /* Tamaño del botón */
@@ -251,11 +251,126 @@
 
 /* Efecto de hover para los botones */
 .carousel-button:hover {
-  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  background-color: #241ba7; /* Color de fondo más oscuro al pasar el mouse */
   transform: translateY(-50%) scale(1.1); /* Agranda el botón al pasar el mouse */
 }
 
 /* Efecto de foco para los botones */
 .carousel-button:focus {
   outline: none; /* Elimina el contorno por defecto */
+}
+
+/*Boton de registros*/
+.register-btn {
+  background-color: #f4b400;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #d49400;
+}
+
+/*introduccion al texto de concurso*/
+
+.articles-section h2 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.articles-section p {
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+/*app.css de la gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 8fr));
+  gap: 10px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  background: white;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-button,
+.prev-button,
+.next-button {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close-button {
+  top: 10px;
+  right: 15px;
+  color: black;
+}
+
+.prev-button {
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.next-button {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }

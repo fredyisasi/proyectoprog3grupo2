@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './ArticleList.css';
+import { Link } from "react-router-dom"; 
+import { FiArrowRight } from "react-icons/fi";
 
 const ArticleDetail = () => {
   return (
@@ -14,17 +16,17 @@ const ArticleDetail = () => {
       <img src="/assets/images/article1.png" alt="Article 1" />
         <p className="primary-text">
         La fotografía de paisajes nocturnos es un campo fascinante que combina técnica, creatividad y paciencia. Capturar la majestuosidad del cielo estrellado, la vía láctea, o un paisaje iluminado por la luna requiere un conocimiento profundo de la técnica fotográfica y del equipo necesario.
-
+        <br /><br />
         Primero, es esencial contar con una cámara que permita largas exposiciones y ajuste manual de los parámetros. Las cámaras DSLR y mirrorless son ideales para este tipo de fotografía. El uso de un trípode es imprescindible para mantener la cámara estable durante exposiciones prolongadas, ya que incluso la más mínima vibración puede arruinar una toma.
-
+        <br /><br />
         La elección de la ubicación es otro aspecto crucial. Alejarse de la contaminación lumínica de las ciudades permite capturar un cielo más claro y lleno de estrellas. Aplicaciones como Light Pollution Map pueden ayudar a encontrar los mejores lugares cercanos.
-
+        <br /><br />
         La configuración de la cámara es fundamental para obtener resultados impresionantes. Se recomienda utilizar una apertura amplia (f/2.8 o mayor) para permitir la entrada de la mayor cantidad de luz posible. La velocidad de obturación puede variar, pero generalmente se utiliza entre 15 y 30 segundos para captar suficientes detalles sin que las estrellas aparezcan como líneas debido a la rotación de la Tierra. El ISO debe ajustarse para equilibrar la sensibilidad a la luz y el ruido; valores entre 1600 y 3200 suelen ser adecuados.
-
+        <br /><br />
         La postproducción juega un papel vital en la fotografía nocturna. Programas como Adobe Lightroom y Photoshop permiten ajustar la exposición, el contraste y la reducción de ruido, resaltando detalles que pueden haber pasado desapercibidos durante la toma.
-
+        <br /><br />
         Experimentar con técnicas como el light painting, donde se utiliza una linterna para iluminar selectivamente partes del paisaje, puede añadir un toque artístico a las fotos. Además, la combinación de varias exposiciones para crear imágenes HDR puede resaltar tanto el cielo como el paisaje de manera equilibrada.
-
+        <br /><br />
         En conclusión, la fotografía de paisajes nocturnos es una disciplina que, si bien desafiante, resulta increíblemente gratificante. Con la práctica, la paciencia y las herramientas adecuadas, se pueden capturar imágenes que no solo muestran la belleza del mundo nocturno, sino que también invitan a explorar y apreciar la naturaleza desde una perspectiva única.
         </p>
 
@@ -232,6 +234,14 @@ const ArticleDetail = () => {
       </div>
 
     </div>
+    <div className="home-text-section">
+         <button className="secondary-button"><Link to="/ArticleDetail2" style={{ textDecoration: 'none', color: 'inherit' }}>
+            Más Articulos <br/><FiArrowRight />
+         </Link></button>
+         <p className="primary-text">
+             
+         </p>
+         </div>
     </div>
   );
 };
