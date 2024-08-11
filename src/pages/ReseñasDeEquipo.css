@@ -1,0 +1,49 @@
+
+.reseñas-de-equipo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reseña-de-equipo-card {
+    margin: 40px;
+    width: 300px;
+  }
+  
+  .reseña-de-equipo-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .reseña-de-equipo-content {
+    padding: 20px;
+  }
+  .rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .star {
+      color: #ffd700; /* Color amarillo para las estrellas */
+      font-size: 18px;
+      margin-right: 5px;
+    }
+    
+    .star-half {
+      color: #ffd700; /* Color amarillo para las estrellas medio llenas */
+      font-size: 18px;
+      margin-right: 5px;
+      position: relative;
+    }
+    
+    .star-half::before {
+      content: "\f005"; /* Icono de estrella medio llena */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      overflow: hidden;
+    }

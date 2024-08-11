@@ -28,6 +28,8 @@ import GaleriaCultural from './pages/GaleriaCultural';
 import LandingPage from './pages/LandingPage';
 import Profile from './pages/Profile';
 import PreguntasFrecuentes from './pages/PreguntasFrecuentes';
+import ContenidoPremium from './pages/ContenidoPremium';
+import ReseñasDeEquipo from './pages/ReseñasDeEquipo';
 
 
 import './App.css';
@@ -61,7 +63,10 @@ const App = () => {
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/PreguntasFrecuentes" element={<PreguntasFrecuentes />} />
-        
+        <Route path="/ContenidoPremium" element={<ContenidoPremium />} />
+        <Route path="/ReseñasDeEquipo" element={<ReseñasDeEquipo />} />
+
+
       </Routes>
       <Footer />
     </div>

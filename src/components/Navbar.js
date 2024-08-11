@@ -27,9 +27,10 @@ const Navbar = () => {
         <li><a href="/Articleshistoria">ARTÍCULOS</a></li>
         <li><a href="/concurso">CONCURSO</a></li>
         <li><a href="/galeria">GALERIA</a></li>
-        <li><a href="/entrevista">ENTREVISTA</a></li>
-        <li><a href="/contacto">CONTACTO</a></li>
+        <li><a href="/ContenidoPremium">CONTENIDO PREMIUM</a></li>
+        <li><a href="/ReseñasDeEquipo">RESEÑAS DE EQUIPO</a></li>
         <li><a href="/preguntasfrecuentes">PREGUNTAS FRECUENTES</a></li>
+        
        
         
       </ul>
