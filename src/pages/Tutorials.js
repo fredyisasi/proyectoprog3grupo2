@@ -53,7 +53,7 @@ const Tutorials = () => {
     { id: "BxPrpr0HZXI", description: "Tutorial para principiantes 17" },
     { id: "orXDK5pPsGk", description: "Tutorial para principiantes 18" },
     { id: "tsKiqFCQsYQ", description: "Tutorial para principiantes 19" },
-    { id: "tsKiqFCQsYQ", description: "Tutorial para principiantes 20" },
+    { id: "tsKiqFCQsYQ", description: "Prueba" },
  
   ];
 
