@@ -1,0 +1,293 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Espacio entre los elementos */
+}
+
+.article-card {
+  width: calc(20.33% - 10px); /* Ancho de cada tarjeta, 33.33% del contenedor con un espacio de 20px entre ellas */
+  padding: 50px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.article-content {
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .article-card {
+    width: calc(50% - 20px); /* Para pantallas más pequeñas, muestra 2 columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .article-card {
+    width: 100%; /* Para pantallas aún más pequeñas, muestra 1 columna */
+  }
+}
+
+.articles {
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  width: 400px;
+}
+
+.articles img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  width: 400px;
+}
+
+.article img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.page-header {
+  text-align: center;
+  padding: 400px 20px 20px 20px;
+  background-image: url('../pages/fondo.png');
+  background-size: cover;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #5a5454;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 10px 0 0 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #e9e9e9;
+}
+
+.main-content h2 {
+  font-size: 3em;
+  color: #efecec;
+  text-align: center;
+}
+
+.main-content p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-size: 1.5em;
+  text-align: center;
+  
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+
+.page-header {
+  text-align: center;
+  padding: 400px 20px 20px 20px;
+  background-image: url('../pages/fondo.png');
+  background-size: cover;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #000000;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 10px 0 0 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #e9e9e9;
+}
+
+.main-content h2 {
+  font-size: 3em;
+  color: #333;
+  text-align: center;
+}
+
+.main-content p {
+  color: #8f7777;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 2.0em;
+  text-align: left;
+  
+}
+
+
+
+/* PRUEBAS */
+
+/* App.css */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Estilo para el contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Color de borde más suave */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para la galería de videos */
+.video-gallery {
+  display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Alinea el desplazamiento */
+  gap: 16px; /* Espacio entre los videos */
+  padding: 10px;
+}
+
+/* Estilo para cada contenedor de video */
+.video-container {
+  flex: 0 0 auto; /* Evita el redimensionamiento */
+  scroll-snap-align: start; /* Alinea los elementos al inicio del contenedor */
+}
+
+/* Estilo para los iframes de los videos */
+.video-container iframe {
+  width: 400px; /* Ajusta el ancho del video */
+  height: 300px; /* Ajusta la altura del video */
+  border-radius: 8px; /* Bordes redondeados para los videos */
+}
+
+/* Estilo para los botones del carrusel */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0400f8; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none;
+  padding: 12px 16px; /* Tamaño del botón */
+  border-radius: 50%; /* Forma circular */
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+/* Estilo para el botón de desplazamiento a la izquierda */
+.carousel-button.left {
+  left: 10px;
+}
+
+/* Estilo para el botón de desplazamiento a la derecha */
+.carousel-button.right {
+  right: 10px;
+}
+
+/* Efecto de hover para los botones */
+.carousel-button:hover {
+  background-color: #241ba7; /* Color de fondo más oscuro al pasar el mouse */
+  transform: translateY(-50%) scale(1.1); /* Agranda el botón al pasar el mouse */
+}
+
+/* Efecto de foco para los botones */
+.carousel-button:focus {
+  outline: none; /* Elimina el contorno por defecto */
+}
+
+/*Boton de registros*/
+.register-btn {
+  background-color: #f4b400;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #d49400;
+}
+
+/*introduccion al texto de concurso*/
+
+.articles-section h2 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.articles-section p {
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}

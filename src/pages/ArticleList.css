@@ -5,7 +5,7 @@
   }
   
   .article-card {
-    width: calc(20.33% - 10px); /* Ancho de cada tarjeta, 33.33% del contenedor con un espacio de 20px entre ellas */
+    width: calc(15.33% - 10px); /* Ancho de cada tarjeta, 33.33% del contenedor con un espacio de 20px entre ellas */
     padding: 50px;
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -27,7 +27,7 @@
   
   .article-card img {
     width: 100%;
-    height: auto;
+    height: 100;
     border-radius: 8px;
   }
   

@@ -1,19 +1,15 @@
-// Video.js
 import React from 'react';
-import '../pages/App.css';
 
-const Video = ({ videoId }) => {
+const Video = ({ videoId, description }) => {
+  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`; // URL de la vista previa del video
+
   return (
-    <div className="video">
-      <iframe
-        width="560"
-        height="315"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        title="Embedded youtube"
-      ></iframe>
+    <div className="video-preview">
+      <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+        <img src={thumbnailUrl} alt="Video thumbnail" />
+      </a>
+      <p>{description}</p>
     </div>
   );
 };

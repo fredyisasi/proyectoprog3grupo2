@@ -24,18 +24,18 @@ const Navbar = () => {
         <li><a href="/">INICIO</a></li>
         <li><a href="/news">NOTICIAS</a></li>
         <li><a href="/tutorials">TUTORIALES</a></li>
-        <li><a href="/podcast">PODCAST</a></li>
-        <li><a href="/articulos">ARTÍCULOS</a></li>
-        <li><a href="/acerca">ACERCA DE</a></li>
-        <li><a href="/contacto">CONTACTO</a></li>
-        <li><a href="/acerca">ACERCA DE</a></li>
+        <li><a href="/Articleshistoria">ARTÍCULOS</a></li>
+        <li><a href="/concurso">CONCURSO</a></li>
+        <li><a href="/galeria">GALERIA</a></li>
+        <li><a href="/entrevista">ENTREVISTA</a></li>
         <li><a href="/contacto">CONTACTO</a></li>
        
         
       </ul>
       <div className="navbar-user">
       <i className="fas fa-user-circle"></i> {/* Icono de usuario */}
-        <a href="/Login" className="navbar-login">Registrarse</a>
+        <a href="/Login" className="navbar-login">Login</a>
+        <a href="/Logout" className="navbar-login">Logout</a>
         <input type="text" placeholder="Search..." className="navbar-search" />
       </div>
     </nav>
