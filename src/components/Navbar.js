@@ -29,6 +29,7 @@ const Navbar = () => {
         <li><a href="/galeria">GALERIA</a></li>
         <li><a href="/entrevista">ENTREVISTA</a></li>
         <li><a href="/contacto">CONTACTO</a></li>
+        <li><a href="/preguntasfrecuentes">PREGUNTAS FRECUENTES</a></li>
        
         
       </ul>

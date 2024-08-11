@@ -27,6 +27,8 @@ import GaleriaPaisa from './pages/GaleriaPaisa';
 import GaleriaCultural from './pages/GaleriaCultural';
 import LandingPage from './pages/LandingPage';
 import Profile from './pages/Profile';
+import PreguntasFrecuentes from './pages/PreguntasFrecuentes';
+
 
 import './App.css';
 
@@ -58,6 +60,8 @@ const App = () => {
         <Route path="/Galeria" element={<Galeria />} />
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/PreguntasFrecuentes" element={<PreguntasFrecuentes />} />
+        
       </Routes>
       <Footer />
     </div>
