@@ -1,15 +1,21 @@
-// src/components/Navbar.js
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { useAuth0 } from "@auth0/auth0-react";
 import './Navbar.css'; // Asegúrate de importar el archivo CSS para los estilos
-import { Link } from 'react-router-dom';
-
+import LoginButton from './LoginButton';
+import LogoutButton from './LogoutButton';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Estado para el dropdown
+  const { isAuthenticated, user } = useAuth0(); // Auth0 hook
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   return (
@@ -29,20 +35,28 @@ const Navbar = () => {
         <li><a href="/galeria">GALERIA</a></li>
         <li><a href="/entrevista">ENTREVISTA</a></li>
         <li><a href="/contacto">CONTACTO</a></li>
-       
-        
       </ul>
-      <div className="navbar-user">
-      <i className="fas fa-user-circle"></i> {/* Icono de usuario */}
-        <a href="/Login" className="navbar-login">Login</a>
-        <a href="/Logout" className="navbar-login">Logout</a>
-        <input type="text" placeholder="Search..." className="navbar-search" />
+      <div className="navbar-user" onClick={toggleDropdown}>
+        <i className="fas fa-user-circle"></i>
+        {dropdownOpen && (
+          <div className="dropdown-menu">
+            {isAuthenticated ? (
+              <>
+                <div className="user-info">
+                  <img src={user.picture} alt={user.name} className="user-avatar" />
+                  <span>{user.name}</span>
+                </div>
+                <LogoutButton />
+              </>
+            ) : (
+              <LoginButton />
+            )}
+          </div>
+        )}
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-
-
 
