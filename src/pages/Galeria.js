@@ -58,7 +58,7 @@ function Galeria() {
       <div className="article-card">
           <img src="/Assets-2/imagenes/Portada6.png" alt="Portada 6" />
           <div className="article-content">
-          <Link to="/GaleriaArqui">
+          <Link to="/EstiloVintage">
           <h2>ESTILO VITAGE </h2>
           </Link>
           </div>
@@ -67,7 +67,7 @@ function Galeria() {
       <div className="article-card">
       <img src="/Assets-2/imagenes/Portada7.png" alt="Portada 7" />
           <div className="article-content">
-          <Link to="/GaleriaBlack">
+          <Link to="/EstiloMinimista">
           <h2>ESTILO MINIMALISTA </h2>
           </Link>
           </div>
@@ -75,7 +75,7 @@ function Galeria() {
       <div className="article-card">
       <img src="/Assets-2/imagenes/Portada8.png" alt="Portada 8" />
           <div className="article-content">
-          <Link to="/GaleriaCultural">
+          <Link to="/EstiloMacro">
           <h2>ESTILO MACRO</h2>
           </Link>
           </div>
@@ -83,7 +83,7 @@ function Galeria() {
       <div className="article-card">
       <img src="/Assets-2/imagenes/Portada9.png" alt="Portada 9" />
           <div className="article-content">
-          <Link to="/GaleriaPaisa">
+          <Link to="/EstiloNaturaleza">
           <h2>ESTILO NATURALEZA </h2>
           </Link>
           </div>
@@ -91,7 +91,7 @@ function Galeria() {
       <div className="article-card">
       <img src="/Assets-2/imagenes/Portada10.png" alt="Portada 10" />
           <div className="article-content">
-          <Link to="/GaleriaSilves">
+          <Link to="/EstiloPanoramico">
           <h2>ESTILO PANORAMICO </h2>
           </Link>
           </div>
