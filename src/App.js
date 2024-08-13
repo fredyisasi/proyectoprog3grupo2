@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Header />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/News" element={<News />} />
