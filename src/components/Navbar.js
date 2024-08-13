@@ -6,57 +6,57 @@ import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false); // Estado para el dropdown
-  const { isAuthenticated, user } = useAuth0(); // Auth0 hook
+const [isOpen, setIsOpen] = useState(false);
+const [dropdownOpen, setDropdownOpen] = useState(false); // Estado para el dropdown
+const { isAuthenticated, user } = useAuth0(); // Auth0 hook
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+const toggleMenu = () => {
+setIsOpen(!isOpen);
+};
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+const toggleDropdown = () => {
+setDropdownOpen(!dropdownOpen);
+};
 
-  return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <a href="/">SH MAGAZINE</a>
-      </div>
-      <div className="menu-icon" onClick={toggleMenu}>
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </div>
-      <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <li><a href="/">INICIO</a></li>
-        <li><a href="/news">NOTICIAS</a></li>
-        <li><a href="/tutorials">TUTORIALES</a></li>
-        <li><a href="/Articleshistoria">ARTÍCULOS</a></li>
-        <li><a href="/concurso">CONCURSO</a></li>
-        <li><a href="/galeria">GALERIA</a></li>
-        <li><a href="/entrevista">ENTREVISTA</a></li>
-        <li><a href="/contacto">CONTACTO</a></li>
-      </ul>
-      <div className="navbar-user" onClick={toggleDropdown}>
-        <i className="fas fa-user-circle"></i>
-        {dropdownOpen && (
-          <div className="dropdown-menu">
-            {isAuthenticated ? (
-              <>
-                <div className="user-info">
-                  <img src={user.picture} alt={user.name} className="user-avatar" />
-                  <span>{user.name}</span>
-                </div>
-                <LogoutButton />
-              </>
-            ) : (
-              <LoginButton />
-            )}
-          </div>
-        )}
-      </div>
-    </nav>
-  );
+return (
+<nav className="navbar">
+<div className="navbar-logo">
+<a href="/">SH MAGAZINE</a>
+</div>
+<div className="menu-icon" onClick={toggleMenu}>
+{isOpen ? <FaTimes /> : <FaBars />}
+</div>
+<ul className={navbar-links ${isOpen ? 'open' : ''}}>
+<li><a href="/">INICIO</a></li>
+<li><a href="/news">NOTICIAS</a></li>
+<li><a href="/tutorials">TUTORIALES</a></li>
+<li><a href="/Articleshistoria">ARTÍCULOS</a></li>
+<li><a href="/concurso">CONCURSO</a></li>
+<li><a href="/galeria">GALERIA</a></li>
+<li><a href="/PreguntasFrecuetes">PREGUNTAS FRECUENTES</a></li>
+<li><a href="/Reseñas">RESEÑAS</a></li>
+<li><a href="/ContenidoPremiun">CONTENIDO PREMIUN</a></li>
+</ul>
+<div className="navbar-user" onClick={toggleDropdown}>
+<i className="fas fa-user-circle"></i>
+{dropdownOpen && (
+<div className="dropdown-menu">
+{isAuthenticated ? (
+<>
+<div className="user-info">
+<img src={user.picture} alt={user.name} className="user-avatar" />
+<span>{user.name}</span>
+</div>
+<LogoutButton />
+</>
+) : (
+<LoginButton />
+)}
+</div>
+)}
+</div>
+</nav>
+);
 };
 
 export default Navbar;
-

@@ -1,0 +1,91 @@
+.preguntas-frecuentes {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preguntas-frecuentes-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .preguntas-frecuentes-tab {
+    margin-right: 20px;
+  }
+  
+  .preguntas-frecuentes-tab a {
+    text-decoration: none;
+    color: #171718;
+  }
+  
+  .preguntas-frecuentes-tab a:hover {
+    color: #c3f36b;
+  }
+  
+  .preguntas-frecuentes-tab.active {
+    border-bottom: 2px solid #e91111;
+  }
+  
+  .preguntas-frecuentes-theme {
+    padding: 20px;
+  }
+  
+  .preguntas-frecuentes-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .preguntas-frecuentes-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .preguntas-frecuentes-item h3 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .preguntas-frecuentes-item p {
+    margin-bottom: 20px;
+  }
+  
+  .preguntas-frecuentes-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preguntas-frecuentes-form h2 {
+    margin-top: 0;
+  }
+  
+  .preguntas-frecuentes-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+  }
+  
+  .preguntas-frecuentes-form button[type="submit"] {
+    background-color: #c3f36b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .preguntas-frecuentes-form button[type="submit"]:hover {
+    background-color: #c3f36b;
+  }
