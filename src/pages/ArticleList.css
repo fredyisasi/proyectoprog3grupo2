@@ -47,3 +47,81 @@
     }
   }
   
+  /** app.css para la seccion de comentario**/ 
+.comment-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 50px; /* Asegúrate de que sea un cuadrado */
+  border-radius: 60%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+
+.comment-content {
+  background-color: #f0f2f5;
+  padding: 10px;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.comment-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.comment-footer span {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #65676b;
+}
+
+.new-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+button- {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.emoji-picker {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.emoji-picker span {
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 24px;
+}

@@ -54,7 +54,7 @@ const Home = () => {
             <p>Estamos comprometidos a brindarte la mejor experiencia fotografica</p>
           </div>
           <div className="service-item">
-            <Link to="/Concurso">
+            <Link to="/Concurso ">
             <h3>Participar en Concurso de Fotografia</h3>
             </Link>
             <p>Acceso a inscripciones a concurso de fotografia y capacitaciones para mejorar tus habilidades</p>
