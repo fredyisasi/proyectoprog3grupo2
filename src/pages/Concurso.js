@@ -24,8 +24,10 @@ function Concurso() {
       <div className="article-card">
           <img src="/Assets-2/imagenes/article1.png" alt="Article 1" />
           <div className="article-content">
-          <h2>CONCURSO DE FOTOGRAFÍA</h2>
-          <h2>RETRATO</h2>
+          <h2>CONCURSO DE FOTOGRAFÍA DE RETRATO</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de paisajes nocturnos es un campo fascinante...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -38,6 +40,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>PAISAJES</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -49,6 +54,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>NATURALES</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -60,6 +68,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>VIDA URBANA</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -71,6 +82,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>ANTIGUAS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -82,6 +96,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>BLANCO Y NEGRO</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -93,6 +110,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>MACRO</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -104,6 +124,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>VIAJES</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -115,6 +138,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>ENFOCANDO MOMENTOS </h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -126,6 +152,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>CAPTURAS BRILLANTES</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -137,6 +166,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>LENTES MAGICOS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -148,6 +180,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>MIRADAS INSPIRADORAS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -159,6 +194,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>INSTATANEAS ETERNA</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -170,6 +208,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>PEPECTIVA INFINITAS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -181,6 +222,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>LUCES Y SOMBRAS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -192,6 +236,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>HISTORIAS DE IMAGEN</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -203,6 +250,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>OBJETIVO ARTISTICO </h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -214,6 +264,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>ARQUITECTURA</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -225,6 +278,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>MURALES CALLEGEROS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La fotografía de alta velocidad en retratos es una técnica ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
@@ -236,6 +292,9 @@ function Concurso() {
           <div className="article-content">
           <h2>CONCURSO DE FOTOGRAFÍA</h2>
           <h2>OCEANICAS</h2>
+          < Link to="/Detalles">
+          <h2>DETALLES</h2>
+          </Link>
             <p>La macro fotografía de insectos es una disciplina que ...</p>
             < Link to="/ConcursoDetail">
             <button class="register-btn">Registrarte</button>
