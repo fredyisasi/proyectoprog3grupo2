@@ -23,7 +23,7 @@ const images = [
   { src: "/Assets-3/imagenes/estiloV17.png", author: "Sebastião Salgado" },
   { src: "/Assets-3/imagenes/estiloV18.png", author: "André Kertész" },
   { src: "/Assets-3/imagenes/estiloV19.png", author: "Elliott Erwitt" },
-  { src: "/Assets-3/imagenes/estiloV20.png", author: "Elliott Erwitt" },
+  { src: "/Assets-3/imagenes/estiloV20.png", author: "André Kertész" },
 ];
 
 const GaleriaArqui = () => {
