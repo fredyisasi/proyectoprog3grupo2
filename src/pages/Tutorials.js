@@ -34,10 +34,10 @@ const Tutorials = () => {
   ];
 
   const beginnerPhotographyVideos = [
-    { id: "7bySeFzhJk8", description: "Tutorial para principiantes 1" },
-    { id: "z03qvzKMwg4", description: "Tutorial para principiantes 2" },
-    { id: "r8T0o3prTaM", description: "Tutorial para principiantes 3" },
-    { id: "BxPrpr0HZXI", description: "Tutorial para principiantes 4" },
+    { id: "Ar_h-uwUvDs", description: "Tutorial para principiantes 1" },
+    { id: "nABSBX-JvBs", description: "Tutorial para principiantes 2" },
+    { id: "p5eXtOvA3Vo", description: "Tutorial para principiantes 3" },
+    { id: "pdmMKOMIA3I", description: "Tutorial para principiantes 4" },
     { id: "orXDK5pPsGk", description: "Tutorial para principiantes 5" },
     { id: "tsKiqFCQsYQ", description: "Tutorial para principiantes 6" },
     { id: "7bySeFzhJk8", description: "Tutorial para principiantes 7" },
