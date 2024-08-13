@@ -33,8 +33,9 @@ const Navbar = () => {
         <li><a href="/Articleshistoria">ARTÍCULOS</a></li>
         <li><a href="/concurso">CONCURSO</a></li>
         <li><a href="/galeria">GALERIA</a></li>
-        <li><a href="/entrevista">ENTREVISTA</a></li>
-        <li><a href="/contacto">CONTACTO</a></li>
+        <li><a href="/PreguntasFrecuentes">PREGUNTAS FRECUENTES</a></li>
+        <li><a href="/ReseñasDeEquipo">RESEÑAS</a></li>
+        <li><a href="/ContenidoPremium">CONTENIDO PREMIUN</a></li>
       </ul>
       <div className="navbar-user" onClick={toggleDropdown}>
         <i className="fas fa-user-circle"></i>
@@ -59,4 +60,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
