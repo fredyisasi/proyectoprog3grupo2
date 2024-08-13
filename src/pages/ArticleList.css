@@ -63,13 +63,13 @@
   margin-bottom: 10px;
 }
 
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background-color: #ccc;
+.avatar img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 50px; /* Asegúrate de que sea un cuadrado */
+  border-radius: 60%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente */
 }
+
 
 .comment-content {
   background-color: #f0f2f5;

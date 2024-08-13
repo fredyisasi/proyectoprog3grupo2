@@ -1,20 +1,70 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 import './ArticleList.css';
-import './App-share.css';
-import { Link } from "react-router-dom"; 
-import { FiArrowRight } from "react-icons/fi";
 
 const ArticleDetail = () => {
-  const [comments, setComments] = useState([[], [], [], [], [], [], [], [], [], []]);
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  const [comments, setComments] = useState([
+    [
+      { user: 'Juan Pérez', picture: '/Assets-2/imagenes/Avatar1.png', text: '¡Excelente artículo!' },
+      { user: 'Ana Gómez', picture: '/Assets-2/imagenes/Avatar2.png', text: 'Muy informativo.' },
+      { user: 'Carlos López', picture: '/Assets-2/imagenes/Avatar3.png', text: 'Me encantó la parte sobre la planificación.' }
+    ],
+    [
+      { user: 'Laura Fernández', picture: '/Assets-2/imagenes/Avatar4.png', text: '¡Quiero intentar esto!' },
+      { user: 'Pedro Martínez', picture: '/Assets-2/imagenes/Avatar5.png', text: 'Gran explicación.' },
+      { user: 'Sofía Ramírez', picture: '/Assets-2/imagenes/Avatar6.png', text: 'Gracias por los consejos.' }
+    ],
+    [
+      { user: 'Miguel Torres', picture: '/Assets-2/imagenes/Avatar7.png', text: '¡Increíble!' },
+      { user: 'Lucía Morales', picture: '/Assets-2/imagenes/Avatar8.png', text: 'Muy útil.' },
+      { user: 'Daniela Campos', picture: '/Assets-2/imagenes/Avatar9.png', text: 'Lo probaré este fin de semana.' }
+    ],
+    [
+      { user: 'Jorge Herrera', picture: '/Assets-2/imagenes/Avatar10.png', text: '¡Fascinante!' },
+      { user: 'Martina Castillo', picture: '/Assets-2/imagenes/Avatar11.png', text: 'No sabía esto.' },
+      { user: 'Felipe Vega', picture: '/Assets-2/imagenes/Avatar12.png', text: '¡Gran artículo!' }
+    ],
+    [
+      { user: 'Valentina Ruiz', picture: '/Assets-2/imagenes/Avatar13.png', text: '¡Inspirador!' },
+      { user: 'Santiago Ríos', picture: '/Assets-2/imagenes/Avatar14.png', text: 'Me ayudó mucho.' },
+      { user: 'Camila Cruz', picture: '/Assets-2/imagenes/Avatar15.png', text: 'Definitivamente lo intentaré.' }
+    ],
+    [
+      { user: 'Gabriel Soto', picture: '/Assets-2/imagenes/Avatar16.png', text: '¡Asombroso!' },
+      { user: 'Isabella Peña', picture: '/Assets-2/imagenes/Avatar17.png', text: 'Muy claro y conciso.' },
+      { user: 'Francisco Núñez', picture: '/Assets-2/imagenes/Avatar18.png', text: 'Gracias por compartir.' }
+    ],
+    [
+      { user: 'Emilia Blanco', picture: '/Assets-2/imagenes/Avatar19.png', text: '¡Me encanta!' },
+      { user: 'Nicolás Luna', picture: '/Assets-2/imagenes/Avatar20.png', text: 'Muy bien explicado.' },
+      { user: 'Victoria León', picture: '/Assets-2/imagenes/Avatar21.png', text: 'Aprendí algo nuevo hoy.' }
+    ],
+    [
+      { user: 'Mateo Salazar', picture: '/Assets-2/imagenes/Avatar22.png', text: '¡Increíble dedicación!' },
+      { user: 'Renata Paredes', picture: '/Assets-2/imagenes/Avatar23.png', text: 'Lo mejor que he leído en mucho tiempo.' },
+      { user: 'Diego Ortega', picture: '/Assets-2/imagenes/Avatar24.png', text: '¡Gracias por esto!' }
+    ],
+    [
+      { user: 'Antonia Bravo', picture: '/Assets-2/imagenes/Avatar25.png', text: '¡Genial!' },
+      { user: 'Tomás Vidal', picture: '/Assets-2/imagenes/Avatar26.png', text: 'Aprendí mucho.' },
+      { user: 'Paula Sandoval', picture: '/Assets-2/imagenes/Avatar27.png', text: 'Voy a intentarlo.' }
+    ],
+    [
+      { user: 'Bruno Medina', picture: '/Assets-2/imagenes/Avatar28.png', text: '¡Impresionante!' },
+      { user: 'Julieta Ponce', picture: '/Assets-2/imagenes/Avatar29.png', text: 'Muy detallado.' },
+      { user: 'Hugo Araya', picture: '/Assets-2/imagenes/Avatar30.png', text: '¡Fantástica información!' }
+    ],
+  ]);
+
   const [commentTexts, setCommentTexts] = useState(['', '', '', '', '', '', '', '', '', '']);
   const [showEmojis, setShowEmojis] = useState([false, false, false, false, false, false, false, false, false, false]);
 
   const addComment = (index) => {
-    if (commentTexts[index].trim()) {
+    if (commentTexts[index].trim() && isAuthenticated) {
       const newComments = [...comments];
-      newComments[index].push({ user: 'Nuevo Usuario', text: commentTexts[index] });
+      newComments[index].push({ user: user.name, picture: user.picture, text: commentTexts[index] });
       setComments(newComments);
 
       const newCommentTexts = [...commentTexts];
@@ -33,6 +83,26 @@ const ArticleDetail = () => {
     const newShowEmojis = [...showEmojis];
     newShowEmojis[index] = !newShowEmojis[index];
     setShowEmojis(newShowEmojis);
+  };
+
+  const shareOnFacebook = (url) => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+  };
+
+  const shareOnTwitter = (url) => {
+    window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, '_blank');
+  };
+
+  const shareOnWhatsApp = (url) => {
+    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`, '_blank');
+  };
+
+  const shareOnTelegram = (url) => {
+    window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}`, '_blank');
+  };
+
+  const shareOnLinkedIn = (url) => {
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
   };
 
   const articles = [
@@ -88,25 +158,7 @@ const ArticleDetail = () => {
     },
   ];
 
-  const shareOnFacebook = (url) => {
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
-  };
-
-  const shareOnTwitter = (url) => {
-    window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, '_blank');
-  };
-
-  const shareOnWhatsApp = (url) => {
-    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`, '_blank');
-  };
-
-  const shareOnTelegram = (url) => {
-    window.open(`https://telegram.me/share/url?url=${encodeURIComponent(url)}`, '_blank');
-  };
-
-  const shareOnLinkedIn = (url) => {
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
-  };
+  if (isLoading) return <div>Cargando...</div>;
 
   return (
     <div>
@@ -123,7 +175,9 @@ const ArticleDetail = () => {
               <div>
                 {comments[index].map((comment, cIndex) => (
                   <div key={cIndex} className="comment">
-                    <div className="avatar"></div>
+                    <div className="avatar">
+                      <img src={comment.picture} alt={comment.user} />
+                    </div>
                     <div className="comment-content">
                       <p><strong>{comment.user}</strong></p>
                       <p>{comment.text}</p>
@@ -136,19 +190,23 @@ const ArticleDetail = () => {
                   </div>
                 ))}
               </div>
-              <div className="new-comment">
-                <div className="avatar"></div>
-                <textarea
-                  value={commentTexts[index]}
-                  onChange={(e) => {
-                    const newCommentTexts = [...commentTexts];
-                    newCommentTexts[index] = e.target.value;
-                    setCommentTexts(newCommentTexts);
-                  }}
-                  placeholder="Escribe una respuesta..."
-                />
-                <button onClick={() => addComment(index)}>Enviar</button>
-              </div>
+              {isAuthenticated && (
+                <div className="new-comment">
+                  <div className="avatar">
+                    <img src={user.picture} alt={user.name} />
+                  </div>
+                  <textarea
+                    value={commentTexts[index]}
+                    onChange={(e) => {
+                      const newCommentTexts = [...commentTexts];
+                      newCommentTexts[index] = e.target.value;
+                      setCommentTexts(newCommentTexts);
+                    }}
+                    placeholder="Escribe una respuesta..."
+                  />
+                  <button onClick={() => addComment(index)}>Enviar</button>
+                </div>
+              )}
               <button onClick={() => toggleEmojiPicker(index)}>
                 Mostrar Emojis
               </button>
@@ -168,29 +226,20 @@ const ArticleDetail = () => {
                 <img src="/Assets-2/imagenes/iconof.png" alt="Facebook" /> Facebook 
               </button>
               <button className="share-button twitter" onClick={() => shareOnTwitter(window.location.href)}>
-              <img src="/Assets-2/imagenes/iconox.png" alt="Twitter" /> Twittear
+                <img src="/Assets-2/imagenes/iconox.png" alt="Twitter" /> Twittear
               </button>
               <button className="share-button whatsapp" onClick={() => shareOnWhatsApp(window.location.href)}>
-              <img src="/Assets-2/imagenes/iconow.png" alt="WhatsApp" /> WhatsApp
+                <img src="/Assets-2/imagenes/iconow.png" alt="WhatsApp" /> WhatsApp
               </button>
               <button className="share-button telegram" onClick={() => shareOnTelegram(window.location.href)}>
-              <img src="/Assets-2/imagenes/iconot.png" alt="Telegram" /> Telegram
+                <img src="/Assets-2/imagenes/iconot.png" alt="Telegram" /> Telegram
               </button>
               <button className="share-button linkedin" onClick={() => shareOnLinkedIn(window.location.href)}>
-              <img src="/Assets-2/imagenes/iconoL.png" alt="LinkedIn" /> LinkedIn
+                <img src="/Assets-2/imagenes/iconoL.png" alt="LinkedIn" /> LinkedIn
               </button>
             </div>
           </div>
         ))}
-        <div className="home-text-section">
-         <button className="secondary-button"><Link to="/ArticleDetail2" style={{ textDecoration: 'none', color: 'inherit' }}>
-            Más Articulos <br/><FiArrowRight />
-         </Link></button>
-         <p className="primary-text">
-             
-         </p>
-         </div>
-
       </div>
     </div>
   );
