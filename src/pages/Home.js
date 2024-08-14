@@ -45,40 +45,46 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="services">
-        <h2>Novedades y Beneficios por tu Suscripción</h2>
-        <div className="services-list">
-          <div className="service-item">
-            <Link to="/PreguntasFrecuentes">
-            <h3>Preguntas Frecuentes</h3>
-            </Link>
-            <p>Estamos comprometidos a brindarte la mejor experiencia fotografica</p>
-          </div>
-          <div className="service-item">
-            <Link to="/Concurso ">
-            <h3>Participar en Concurso de Fotografia</h3>
-            </Link>
-            <p>Acceso a inscripciones a concurso de fotografia y capacitaciones para mejorar tus habilidades</p>
-          </div>
-          <div className="service-item">
-            <Link to="/ReseñasDeEquipo">
-            <h3>Las Mejores Reseñas De Equipos</h3>
-            </Link>
-            <p>Reseñas y asesoramiento en toma de desiciones de equipos de alta gama fotografica</p>
-          </div>
-          <div className="service-item">
-            <Link to="/ContenidoPremium">
-            <h3>Acceso a contenido premiun</h3>
-            </Link>
-            <p>El mejor contenido de los mejore fotografos</p>
-          </div>
-          <div className="service-item">
-            <Link to="/Tutorials">
-            <h3>Los mejores tutoriales</h3>
-            </Link>
-            <p>Encontraras loe mejores tutorilaes para principantes y fotografos avanzados</p>
-          </div>
-        </div>
-      </section>
+  <h2>Novedades y Beneficios por tu Suscripción</h2>
+  <div className="services-list">
+    <div className="service-item">
+      <Link to="/PreguntasFrecuentes">
+        <h3>Preguntas Frecuentes</h3>
+      </Link>
+      <img src="/assets/images/home1.png" alt="Preguntas Frecuentes" className="service-image" />
+      <p>Estamos comprometidos a brindarte la mejor experiencia fotográfica</p>
+    </div>
+    <div className="service-item">
+      <Link to="/Concurso">
+        <h3>Participar en Concurso de Fotografía</h3>
+      </Link>
+      <img src="/assets/images/home2.png" alt="Concurso de Fotografía" className="service-image" />
+      <p>Acceso a inscripciones a concurso de fotografía y capacitaciones para mejorar tus habilidades</p>
+    </div>
+    <div className="service-item">
+      <Link to="/ReseñasDeEquipo">
+        <h3>Las Mejores Reseñas De Equipos</h3>
+      </Link>
+      <img src="/assets/images/home3.png" alt="Reseñas de Equipos" className="service-image" />
+      <p>Reseñas y asesoramiento en toma de decisiones de equipos de alta gama fotográfica</p>
+    </div>
+    <div className="service-item">
+      <Link to="/ContenidoPremium">
+        <h3>Acceso a contenido premium</h3>
+      </Link>
+      <img src="/assets/images/home4.png" alt="Contenido Premium" className="service-image" />
+      <p>El mejor contenido de los mejores fotógrafos</p>
+    </div>
+    <div className="service-item">
+      <Link to="/Tutorials">
+        <h3>Los mejores tutoriales</h3>
+      </Link>
+      <img src="/assets/images/home5.png" alt="Tutoriales" className="service-image" />
+      <p>Encontrarás los mejores tutoriales para principiantes y fotógrafos avanzados</p>
+    </div>
+  </div>
+</section>
+
       <h1>Articulos y Noticias</h1>
       {/* Article List */}
       <div className="article-list">
@@ -123,31 +129,18 @@ const Home = () => {
       
 
 
-      <h1>Galeria</h1>
-      {/* Gallery Section */}
-      <section className="gallery">
-        
-        <div className="gallery-images">
-          <img src="/Assets-3/imagenes/Arquitectura1.png" alt="Photo 1" />
-          <img src="/Assets-3/imagenes/black1.png" alt="Photo 1" />
+<div className="artcle-list">
+  <h1>Galeria</h1>
+    <img src="/Assets-3/imagenes/Arquitectura1.png" alt="Photo 1" />
+    <img src="/Assets-3/imagenes/black1.png" alt="Photo 2" />
+    <img src="/Assets-3/imagenes/Arquitectura2.png" alt="Photo 3" />
+    <img src="/Assets-3/imagenes/black2.png" alt="Photo 4" />
+    <img src="/Assets-3/imagenes/Arquitectura3.png" alt="Photo 5" />
+    <img src="/Assets-3/imagenes/black3.png" alt="Photo 6" />
+    <img src="/Assets-3/imagenes/Arquitectura4.png" alt="Photo 7" />
+    <img src="/Assets-3/imagenes/black4.png" alt="Photo 8" />
+</div>
 
-        </div>
-        <div className="gallery-images">
-          <img src="/Assets-3/imagenes/Arquitectura2.png" alt="Photo 1" />
-          <img src="/Assets-3/imagenes/black2.png" alt="Photo 1" />
-
-        </div>
-        <div className="gallery-images">
-          <img src="/Assets-3/imagenes/Arquitectura3.png" alt="Photo 1" />
-          <img src="/Assets-3/imagenes/black3.png" alt="Photo 1" />
-
-        </div>
-        <div className="gallery-images">
-          <img src="/Assets-3/imagenes/Arquitectura4.png" alt="Photo 1" />
-          <img src="/Assets-3/imagenes/black4.png" alt="Photo 1" />
-
-        </div>
-      </section>
       <div className="home-text-section">
           <button className="secondary-button">
             <Link to="/Galeria" style={{ textDecoration: 'none', color: 'inherit' }}>
