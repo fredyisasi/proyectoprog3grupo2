@@ -29,6 +29,170 @@ function News() {
                   <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
                 </div>
             </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia3.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia4.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia5.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia6.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia7.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia8.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia9.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia10.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia11.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia12.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia13.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia14.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia15.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia16.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia17.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia7.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia9.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia11.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+
+
         </div>
       
         
@@ -44,6 +208,169 @@ function News() {
                 <h2>Novedades de audio y vídeo de Adobe</h2>
                 </Link>
                   <p>Adobe ha anunciado nuevas e importantes actualizaciones de audio y video en sus herramientas de Creative Cloud....</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia8.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia9.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia10.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia11.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia12.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia13.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia14.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia9.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia10.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia11.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia9.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+
+            <div className="article-card">
+                <img src="/assets/images/noticia11.png" alt="Noticia 1" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Ganadores Sony World Photography Awards y evento 2024</h2>
+                </Link>
+                  <p>Ayer se ha celebrado la gala de entrega de premios de los Sony World Photography Awards...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia15.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia16.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia17.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia7.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia9.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
+                </div>
+            </div>
+            <div className="article-card">
+                <img src="/assets/images/noticia11.png" alt="Noticia 2" />
+                <div className="article-content">
+                <Link to="/Newsdetail">
+                <h2>Últimos días para enviar tus fotos y vídeos al Red Bull Illume</h2>
+                </Link>
+                  <p>Los fotógrafos y videógrafos de deportes de aventura y acción pueden participar...</p>
                 </div>
             </div>
             <div className="article-card">
